@@ -1,6 +1,9 @@
 import { Request, Response } from 'express';
-import { Result, ValidationError, validationResult } from "express-validator";
+import { Result, ValidationChain, ValidationError, validationResult, query } from "express-validator";
 import { AppError } from "./AppError";
+
+export const queryNameValidator: ValidationChain = query('name').isString().trim().not().isEmpty().escape();
+
 
 export const validateInput = (req: Request, res: Response): void => {
     const errors: Result<ValidationError> = validationResult(req);

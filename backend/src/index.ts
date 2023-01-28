@@ -1,6 +1,8 @@
 import * as express from 'express';
 import { Express, NextFunction, Request, Response } from 'express';
 import { AppError } from './AppError';
+import { queryNameValidator as queryPokemonNameValidator } from './validators';
+import { getPokemonByName } from './PokemonController';
 
 const app: Express = express();
 app.use(express.json());
@@ -8,6 +10,7 @@ app.use(express.json());
 const port = 8000;
 const basePath = "/api";
 
+app.get(`${basePath}/pokemons`, queryPokemonNameValidator, getPokemonByName);
 
 const errorHandler = (error: AppError | Error, req: Request, res: Response, next: NextFunction) => {
   console.error("An error occurred", error.message)
