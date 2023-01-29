@@ -1,0 +1,43 @@
+@media (min-width: 1001px) {
+  .inputGroup {
+    width: 68%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .inputGroup {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputGroup {
+    width: 75%;
+  }
+}
+
+.inputGroup {
+  border: 1px solid black;
+  border-radius: 16px;
+  height: 41px;
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+svg {
+  padding-right: 10px;
+}
+
+input {
+  height: 80%;
+  border: none;
+  width: 80%;
+}
+
+input:focus-visible {
+  border: none;
+  outline: none;
+}

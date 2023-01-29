@@ -15,16 +15,16 @@ export function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <div className="PokemonCard">
-      <div className="sectionContainer--image margin-bottom-10">
+      <div className="imageContainer margin-bottom-10">
         <img
           src={pokemon.sprites.front_default ?? undefined}
           alt="default sprite"
         ></img>
       </div>
 
-      <div className="width-100">
+      <div className="statContainer">
         <div className="textPair margin-bottom-15">
-          <p>{name}</p>
+          <p className="overflow-wrap-anywhere">{name}</p>
           <p className="type">{type}</p>
         </div>
 

@@ -1,5 +1,21 @@
 .App {
   text-align: center;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.pokemonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 68%;
+}
+
+@media (max-width: 1000px) {
+  .pokemonContainer {
+    width: 100%;
+    padding: 0;
+  }
 }

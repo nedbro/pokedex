@@ -23,7 +23,7 @@ const fetchAllPokemonNames = async (next: NextFunction) => {
 
 
 export const getPokemonByName = async (req: TypedRequest<never, { name: string }, never>, resp: Response, next: NextFunction) => {
-    validateInput(req, resp);
+    validateInput(req, resp, next);
 
     if (mockPokemonCache.size === 0) {
         await fetchAllPokemonNames(next);
