@@ -1,4 +1,5 @@
 import * as express from 'express';
+import * as cors from 'cors';
 import { Express, NextFunction, Request, Response } from 'express';
 import { AppError } from './AppError';
 import { queryNameValidator as queryPokemonNameValidator } from './validators';
@@ -6,6 +7,7 @@ import { getPokemonByName } from './PokemonController';
 
 const app: Express = express();
 app.use(express.json());
+app.use(cors());
 
 const port = 8000;
 const basePath = "/api";
