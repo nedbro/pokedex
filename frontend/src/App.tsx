@@ -21,7 +21,7 @@ function App() {
               setPokemons([]);
             }
           });
-      }, 2000);
+      }, 1000);
 
       return () => clearTimeout(getPokemons);
     }
@@ -36,7 +36,7 @@ function App() {
       {pokemons ? (
         <div className="pokemonContainer">
           {pokemons.map((pokemon) => (
-            <PokemonCard pokemon={pokemon} key={pokemon.id}></PokemonCard>
+            <PokemonCard pokemon={pokemon} key={pokemon.id} searchedName={searchedName}></PokemonCard>
           ))}{" "}
         </div>
       ) : null}
