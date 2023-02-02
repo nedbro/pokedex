@@ -1,0 +1,109 @@
+.overlayPokemonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  padding: 20px 10px 38px 20px;
+
+  height: fit-content;
+
+  border: 1px solid black;
+
+  border-radius: 8px;
+  background-color: white;
+}
+
+.topRow {
+  display: flex;
+  width: 100%;
+
+  b {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    width: 85%;
+  }
+
+  img {
+    padding-right: 15px;
+  }
+}
+
+.imageContainer {
+  width: 185px;
+  height: 185px;
+}
+
+.textPair {
+  display: flex;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+}
+
+.paddingLeft4 {
+  padding-left: 4px;
+}
+
+.paddingRight4 {
+  padding-right: 4px;
+}
+
+.nameAndTypeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.type {
+  padding: 1px 4px;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+  margin: 0;
+  text-align: center;
+}
+
+.marginBottom15 {
+  margin-bottom: 15px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.paddingRight10 {
+  padding-right: 10px;
+}
+
+.statContainer {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.marginRight35 {
+  margin-right: 35px;
+}
+
+.overflowWrapAnywhere {
+  overflow-wrap: anywhere;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

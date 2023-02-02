@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.pokemonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  width: 68%;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .pokemonContainer {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 362px;
+  height: 282px;
+  z-index: 1040;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(12px);
+}
